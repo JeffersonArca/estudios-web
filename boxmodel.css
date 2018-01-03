@@ -1,0 +1,27 @@
+p{
+	width: 400px; /*Ancho de la caja*/
+	height: 200px; /*Alto de la caja*/
+	background: lightblue;
+	padding: 20px; /*A los 4 lados, 20px a cada lado, sumae 4 veces tanto el alto como el ancho*/
+	border: 2px solid #333; /*A los 4 lados, sumar 2px de borde a cada lado. Usar el inspector*/
+	box-sizing: border-box; /*Comentar y descomentar*/
+}
+
+.box1{
+	width: 400px; 
+	height: 200px;
+	background: #e6acb2;
+	padding: 20px;
+	border: 2px solid #333;
+	box-sizing: border-box;
+}
+
+.box2-container{
+	background: yellow;
+	width: 500px; /* Activar después de explicar */
+}
+.box2{
+	border: 1px solid black;
+	width: 50%; /* 	Activar después de explicar */
+	padding-top: 10%; /* 	Activar después de explicar*/
+}

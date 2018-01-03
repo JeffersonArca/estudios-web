@@ -1,0 +1,13 @@
+@import url("segunda.css");
+body{
+	font-family: monospace;
+	padding: 30px;
+}
+
+h1 {
+	color: #ff0000;
+}
+
+p{
+	width: 500px;
+}

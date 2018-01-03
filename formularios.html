@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formularios en HTML</title>
+</head>
+<body>
+	<h1>Formularios</h1>
+	<form>
+			<!--
+				* Elementos que reciben información
+				* Elementos que muestran información
+				* Elementos para agrupar
+				
+			-->
+		<!--<fieldset> <!--Agrupa varios elementos un un contenedor-->
+			<legend>Datos personales del participante</legend>	<!--Crea un texto para el fieldset-->
+			<label>	<!--Crea una etiqueta o un texto en pantalla-->
+				Escriba su nombre: 
+				<input>	<!--Crea un cuadro de texto, hay varios tipos-->
+			</label>
+			<br>
+			<label>
+				Escriba su apellido: 
+				<input>
+			</label>
+		</fieldset>
+		
+		<h3><p>Ejemplos de la etiqueta <code>input</code></p></h3>
+		
+		<fieldset>
+			<legend>Radiobutton</legend>
+			Seleccione su sexo:
+			<label>Masculino 
+				<input type="radio" name="mascul"> 
+			</label>
+			<label>Femenino <input type="radio" name="feme"> </label>
+			<br>
+			Seleccione el iva(10% para Manabí y Esmeraldas, 14% para el resto del país)
+			<br>
+			<label>10% Manabí y Esmeraldas<input type="radio"></label>
+			<br>
+			<label>10% Resto del país<input type="radio"></label>
+		</fieldset>
+			
+		<fieldset>
+			<legend>Checkbox</legend>
+			En Word se puede hacer:
+			<br>
+				<input type="checkbox" name="preg1"><label>Tablas de contenido</label>
+				<br>
+				<input type="checkbox" name="preg2"><label>Editar estilos de texto</label>
+				<br>
+				<input type="checkbox" name="preg3"><label>Validar celdas</label>
+				<br>
+				<input type="checkbox" name="preg4"><label>Comprobar la ortografía</label>
+				<br>
+		</fieldset>
+			
+		<fieldset>
+			<legend>Colorpicker</legend>
+				<input type="color">
+				Seleccion de colores
+				
+				<br>
+				<label>Seleccion de colores 2
+					<input type="color">
+				</label>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Date</legend>
+				<label>Escriba su fecha de nacimiento, con el formato dd/mm/año
+					<input type="date" name="fec_nac">
+				</label>
+				<br>
+				<label>Escriba la fecha y hora actual<input type="datetime" name="fecha_hora"></label>
+				<br>
+				<label>Escriba la hora actual<input type="time" name="hora"></label>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Email</legend>
+				<label>Escriba su email: <input type="email" name="mail" placeholder="ejemplo: alguien@hotmail.com"></label>
+				<button>Registrarse con su correo</button>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Image</legend>
+			<label>Agregue su fotografía: <input type="image"></label>
+		</fieldset>
+			
+		<fieldset>
+		<legend>URL</legend>
+			<label>Introduzca una URL <input type="url"></label>
+				<button>Validar URL</button>
+		</fieldset>
+			
+		<fieldset>
+		<legend>Password</legend>
+			<label>Ingrese su password<input type="password"></label>
+				<button>Ingresar</button>
+		</fieldset>
+			
+		<!--<fieldset>
+		<legend>Number</legend>
+			<label>Ingrese la cantidad de compra<input type="number"></label>
+				<button>Comprar</button>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Range</legend>
+			<label>Zoom 0%<input type="range" min="0" max="100" step="20"> 100%</label>
+		</fieldset>
+		
+		<fieldset>
+		<legend>File</legend>
+			<label>Seleccione el archivo<input type="file"></label>
+		</fieldset>
+			
+		<fieldset>
+		<legend>Reset</legend>
+			<label>Limpiar todos los campos<input type="reset"></label>
+		</fieldset>
+		
+		<!--<fieldset>
+		<legend>Button</legend>
+			<button>Enviar</button>	Crea un botón para enviar valores a otra página web, hay varios tipos
+		</fieldset>-->
+		
+		<br>
+		<h3>Ejemplos con la etiqueta <code>select</code> y <code>option</code></h3>
+		<fieldset>
+			<legend>Select</legend>
+			<label>Seleccione de la lista el sexo
+			<select name="genero" id="genero">
+				<option value="Masculino">Masculino</option>
+				<option value="Femenino">Femenino</option>
+			</select>
+		</label>
+		<br>
+		<legend>Select multiple</legend>
+			<label>Seleccione el o los países
+			<select multiple name="pais" id="pais">
+				<option value="España">España</option>
+				<option value="Ecuador">Ecuador</option>
+				<option value="Africa">Africa</option>
+				<option value="Canadá">Canadá</option>
+				<option value="Brasil">Brasil</option>
+			</select>
+		</label>
+		</fieldset>
+		
+		<legend>Select multiple agrupados</legend>
+			<label>Continentes y paises
+			<select size="13" multiple name="continentes" id="continentes">
+				<optgroup label="Lacteos">
+					<option value="Leche">Leche</option>
+					<option value="Yogurt">Yogu</option>
+					<option value="Queso">Queso</option>
+				</optgroup>
+				<optgroup label="Europa">
+					<option value="España">España</option>
+					<option value="Alemania">España</option>
+					<option value="Francia">España</option>
+				</optgroup>
+				<optgroup label="Africa">
+					<option value="Africa">Sudafrica</option>
+					<option value="Africa">Nigeria</option>
+					<option value="Africa">Zimbawe</option>
+				</optgroup>
+			</select>
+		</label>
+		</fieldset> -->
+		
+	</form>
+</body>
+</html>

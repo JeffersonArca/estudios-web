@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tablas</title>
+</head>
+<body>
+	<h3>Agrupación en columnas</h3>
+	<p>Las columnas de una tabla que están de alguna manera relacionadas pueden ser agrupadas con el elemento <code>colgroup</code>. Por ejemplo, el elemento <code>colgroup</code> se puede utilizar para agrupar columnas si se refieren a un mismo producto o si representan una misma magnitud, pero no debe ser usado  para hacer que tengan el mismo aspecto (para eso está el elemento <code>col</code>).</p>
+
+	<p>El elemento <code>colgroup</code>, solo o conformando un bloque, debe ser declarado al comienzo de la tabla, luego de su etiqueta de apertura y de su título <code>caption</code>, si éste está presente. Cada elemento <code>colgroup</code> declarado en este bloque definirá un grupo con la ayuda del atributo <code>span</code>, el cual indicará el número de columnas que pertenecerán a este grupo.</p>
+
+	<p>Los grupos de columnas se declaran de izquierda a derecha, de modo que el primer grupo contendrá a la primera columna de la tabla más un número de columnas consecutivas según lo defina su atributo <code>span</code>. El resto de los grupos comenzarán por la primera columna a la derecha del grupo anterior.</p>
+
+	<h4><p>Ejemplo:</p></h4>
+		<table border="1px">
+		  <colgroup>
+		  <colgroup span="2" style="background: rgba(128, 255, 0, 0.3); border: 1px solid rgba(100, 200, 0, 0.3);"></colgroup>
+		  <colgroup span="2" style="background: rgba(255, 128, 0, 0.3); border: 1px solid rgba(200, 100, 0, 0.3);"></colgroup>
+		  <tr>
+		    <th></th>
+		    <th colspan="2">Mario</th>
+		    <th colspan="2">Luigi</th>
+		  </tr>
+		  <tr>
+		    <th></th>
+		    <th>Primera prueba</th>
+		    <th>Segunda prueba</th>
+		    <th>Primera prueba</th>
+		    <th>Segunda prueba</th>
+		  </tr>
+		  <tr>
+		    <th>Día 1</th>
+		    <td>25 km</td>
+		    <td>38 km</td>
+		    <td>28 km</td>
+		    <td>37 km</td>
+		  </tr>
+		  <tr>
+		    <th>Día 2</th>
+		    <td>22 km</td>
+		    <td>35 km</td>
+		    <td>30 km</td>
+		    <td>35 km</td>
+		  </tr>
+		</table>
+
+<h2>Tarea del estudiante</h2>
+	<p><em>Crear un horario de estudios, de lunes a viernes con dos recesos</em><br>
+	Con la hora de inicio 07:15 y hora de salida 13:00</p>
+	<!--http://www.htmlquick.com/es/tutorials/tables/4.html-->
+	<!--http://www.htmlquick.com/es/tutorials/forms.html-->
+
+</body>
+</html>

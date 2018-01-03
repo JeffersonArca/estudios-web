@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tablas</title>
+</head>
+<body>
+	
+	<h3><p>Unificación de celdas</p></h3>
+	<p>es un mecanismo mediante el cual un autor puede combinar o fusionar dos o más celdas adyacentes (td y th) en una tabla.</p>
+
+	<p>Este efecto puede lograrse utilizando los atributos <code>colspan</code>, para unificación horizontal, y <code>rowspan</code>, para unificación vertical. Estos atributos pueden tomar un valor entero mayor a cero, que representa el número de celdas que participarán en la unificación.</p>
+	
+	<h4><p>Ejemplo</p></h4>
+	
+	<table border="1px">
+	  <tr>
+	    <th></th>
+	    <th>Día 1</th>
+	    <th>Día 2</th>
+	    <th>Día 3</th>
+	    <th>Día 4</th>
+	  </tr>
+	  <tr>
+	    <th>Mike (lastimado)</th>
+	    <td colspan="3">0 km</td>
+	    <td>4 km</td>
+	  </tr>
+	  <tr>
+	    <th>Susan</th>
+	    <td>23 km</td>
+	    <td>18 km</td>
+	    <td>19 km</td>
+	    <td>15 km</td>
+	  </tr>
+	</table>
+	
+	<p>El siguiente ejemplo muestra celdas verticales combinadas utilizando el atributo <code>rowspan</code></p>
+	<p>Ejemplo:</p>
+		<table border=1px>
+		  <tr>
+		    <th></th>
+		    <th>Básico</th>
+		    <th>Completo</th>
+		  </tr>
+		  <tr>
+		    <th>Instalación</th>
+		    <td rowspan="2">Gratis!</td>
+		    <td>$49.99</td>
+		  </tr>
+		  <tr>
+		    <th>Primer año</th>
+		    <td>$19.99</td>
+		  </tr>
+		  <tr>
+		    <th>Segundo año</th>
+		    <td>$9.99</td>
+		    <td>$29.99</td>
+		  </tr>
+		</table>
+	<p><a href="tablas3.html">Continúa</a></p>
+
+</body>
+</html>

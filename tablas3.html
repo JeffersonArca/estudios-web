@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tablas</title>
+</head>
+<body>
+	<h3>Agrupación de filas</h3>
+	<p>HTML provee tres elementos para organizar la información presentada en una tabla. Éstos son: <code>thead</code>, para agrupar las filas que presentan infromación de encabezado; <code>tfoot</code> para contener a las filas que representan un pie o resumen; y <code>tbody</code>, para representar un bloque de filas que consiste en un cuerpo de datos.</p>
+	
+	<p>Ejemplo:</p>
+		<table border="1px">
+		  <thead>
+		    <tr>
+		      <th></th>
+		      <th colspan="2">Mario</th>
+		      <th colspan="2">Luigi</th>
+		    </tr>
+		    <tr>
+		      <th scope="col">Fecha</th>
+		      <th>Entrada</th>
+		      <th>Salida</th>
+		      <th>Entrada</th>
+		      <th>Salida</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <th>15/07</th>
+		      <td>$200,00</td>
+		      <td>$50,00</td>
+		      <td>$0</td>
+		      <td>$0</td>
+		    </tr>
+		    <tr>
+		      <th>28/07</th>
+		      <td>$0,00</td>
+		      <td>$100,00</td>
+		      <td>$100,00</td>
+		      <td>$0,00</td>
+		    </tr>
+		    <tr>
+		      <th>09/08</th>
+		      <td>$0,00</td>
+		      <td>$50,00</td>
+		      <td>$0,00</td>
+		      <td>$80,00</td>
+		    </tr>
+		    <tr>
+		      <th>22/08</th>
+		      <td>$40,00</td>
+		      <td>$0,00</td>
+		      <td>$0,00</td>
+		      <td>$110,00</td>
+		    </tr>
+		    <tr>
+		      <th>25/08</th>
+		      <td>$0,00</td>
+		      <td>$20,00</td>
+		      <td>$0,00</td>
+		      <td>$0,00</td>
+		    </tr>
+		  </tbody>
+		  <tfoot>
+		    <tr>
+		      <th>Balance</th>
+		      <td colspan="2">$20,00</td>
+		      <td colspan="2">$10,00</td>
+		    </tr>
+		  </tfoot>
+		</table>
+
+<br>
+	<h4><p>Otro ejemplo, con celdas con colores.</p></h4>
+
+		<table border="1px">
+		  <thead>
+		    <tr>
+		      <th></th>
+		      <th colspan="2">Mario</th>
+		      <th colspan="2">Luigi</th>
+		    </tr>
+		    <tr>
+		      <th scope="col">Fecha</th>
+		      <th>Entrada</th>
+		      <th>Salida</th>
+		      <th>Entrada</th>
+		      <th>Salida</th>
+		    </tr>
+		  </thead>
+		  <tbody style="background: rgba(128, 255, 0, 0.3); border: 1px solid rgba(100, 200, 0, 0.3);">
+		    <tr>
+		      <th>15/07</th>
+		      <td>$200,00</td>
+		      <td>$50,00</td>
+		      <td>$0</td>
+		      <td>$0</td>
+		    </tr>
+		    <tr>
+		      <th>28/07</th>
+		      <td>$0,00</td>
+		      <td>$100,00</td>
+		      <td>$100,00</td>
+		      <td>$0,00</td>
+		    </tr>
+		  </tbody>
+		  <tbody style="background: rgba(255, 128, 0, 0.3); border: 1px solid rgba(200, 100, 0, 0.3);">
+		    <tr>
+		      <th>09/08</th>
+		      <td>$0,00</td>
+		      <td>$50,00</td>
+		      <td>$0,00</td>
+		      <td>$80,00</td>
+		    </tr>
+		    <tr>
+		      <th>22/08</th>
+		      <td>$40,00</td>
+		      <td>$0,00</td>
+		      <td>$0,00</td>
+		      <td>$110,00</td>
+		    </tr>
+		    <tr>
+		      <th>25/08</th>
+		      <td>$0,00</td>
+		      <td>$20,00</td>
+		      <td>$0,00</td>
+		      <td>$0,00</td>
+		    </tr>
+		  </tbody>
+		  <tfoot>
+		    <tr>
+		      <th>Balance</th>
+		      <td colspan="2">$20,00</td>
+		      <td colspan="2">$10,00</td>
+		    </tr>
+		  </tfoot>
+		</table>
+
+<p><a href="tablas4.html">Continúa</a></p>
+
+</body>
+</html>

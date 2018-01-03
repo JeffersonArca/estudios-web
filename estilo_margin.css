@@ -1,0 +1,38 @@
+.div1{
+	margin: 1em 1.5em;
+	/*Lo que hace es:
+		margin-top: 1em;
+		margin-right: 1.5em;
+		margin-bottom: 1em;
+		margin-left: 1.5;
+		Siempre siguiendo el sentido de las agujas del reloj*/
+}
+
+.div2{
+	margin: 1em auto 1.5em;
+	/*Lo que hace es:
+		margin-top: 1em;
+		margin-right y margin-left: auto;
+		margin-bottom: 1.5em;
+		Siempre siguiendo el sentido de las agujas del reloj*/
+}
+
+[class^="caja"]{
+	background: blue;
+	width: 200px;
+	height: 200px;
+}
+
+.caja1{
+	margin-bottom: 2em;
+}
+.caja2{
+	margin-top: 1em; /*Al hacer esto, esta caja se separará aun mas de la caja1, por que la caja1 tiene un espacio en el margen inferior de 2em, más 1em del margen superior de la caja2. Entoces la caja2 tiene 3em de separación. En ese caso, basta con la separación del borde inferior de la caja1; es como aplicar espaciados a los parrafos en Word.*/
+}
+
+.padre{
+	background: gray;
+}
+.hijo{
+	margin-top: 2em;
+}

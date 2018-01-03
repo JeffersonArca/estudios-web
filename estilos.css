@@ -1,0 +1,46 @@
+h1 {
+	font-family: "arial";
+	color: #00e6ff;
+}
+
+h2 {
+	background-color: #1492c8;
+	font-size: x-large;
+	color: white;
+}
+
+#datos_menu {
+	font-size: 15em;
+	font-family: "arial";	
+}
+#contenido .promociones {
+	color: blue;
+	font-family: "arial";
+	margin: 0.3em 1em 0 0;
+	text-align: right;
+}
+#contenido {
+	font-family: "arial";
+	font-size: medium;
+}
+a {
+	font-size: medium;
+	background: #4e4c4c;
+	color: aqua;
+	list-style: none;
+	font-family: sans-serif;
+}
+nav ul{
+	list-style: none;
+}
+
+ul {
+	color: green;
+}
+
+header{
+	background: #343B54;
+	color: white;
+	overflow: hidden;
+	padding: 0.5em;
+}

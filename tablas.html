@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Tablas</title>
+</head>
+<body>
+	<h2><p>Tablas</p></h2>
+	<p>las tablas tienen etiquetas especiales como: <br>
+		<ul>
+			<code>
+			<li>table</li>
+			<li>td</li>
+			<li>tr</li>
+			</code>
+		</ul>
+La etiqueta <em>table</em> encierra las otras etiquetas y sirve para crear una tabla <br>
+		La etiqueta <em>thead</em> contiene a un bloque de filas <code>tr</code>, que representa a la sección de encabezado de una tabla, donde las celdas de encabezado <code>th</code> son encontradas habitualmente</p>
+		<p>Puede ser útil para especificar qué filas proveen información de encabezado para el resto de la tabla.</p>
+		<br>
+		La etiqueta <em>tr</em> de <strong>table row</strong> define una fila de celdas en una tabla. Estas pueden ser una mezcla de elementos td y th <br>
+		La etiqueta <em>td</em> sirve para crear la celda <br>
+		La etiqueta <em>th</em> define una celda como la cabecera de una columna en una tabla.</p>
+		<p>Las celdas regulares serán contenidas en la sección del cuerpo <code>tbody</code></p>
+		<h5><p>Ejemplo: </p></h5>
+		<table border="1px">
+			<!--el codigo html -->
+			<thead>
+			<th>Título de la tabla, con el elemento <code>th</code></th>
+  			<tr>
+    			<td>Celda 1</td>
+    			<td>Celda 2</td>
+    			<td>Celda 3</td>
+  			</tr>
+  			</thead>
+  			<tr>
+    			<td>Celda 4</td>
+    			<td>Celda 5</td>
+    			<td>Celda 6</td>
+    		</tr>
+		</table>
+
+		<h4><p>Otro ejemplo:</p></h4>
+			<table border="1px">
+			  <thead>
+			    <tr>
+			      <th>Libro</th>
+			      <th>Autor</th>
+			      <th>Publicado</th>
+			      <th>Ventas (en millones)</th>
+			    </tr>
+			  </thead> <!--Hasta aquí se indica el encabezado de la tabla-->
+			  <tbody>
+			    <tr>
+			      <td>Historia de dos ciudades</td>
+			      <td>Charles Dickens</td>
+			      <td>1859</td>
+			      <td>200</td>
+			    </tr>
+			    <tr>
+			      <td>El señor de los anillos</td>
+			      <td>J. R. R. Tolkien</td>
+			      <td>1954-1955</td>
+			      <td>150</td>
+			    </tr>
+			    <tr>
+			      <td>El principito</td>
+			      <td>Antoine de Saint-Exupéry</td>
+			      <td>1943</td>
+			      <td>140</td>
+			    </tr>
+			    <tr>
+			      <td>Las cuatro estaciones</td>
+			      <td>Stephen King</td>
+			      <td>1984</td>
+			      <td>430</td>
+			    </tr>
+			  </tbody>
+			</table>
+		<br>
+<h3><p>El atributo <code>scope</code></p></h3>
+<p>provee un mecanismo para indicar explícitamente a qué celdas afecta una celda de encabezado. </p>
+<p>Este atributo solo puede ser declarado en una celda de encabezado y tomar los valores "col", "row", "colgroup" y "rowgroup". </p>
+<p>Los valores "col" y "row" indican que la celda de encabezado provee información para el resto de las celdas en la columna o fila (respectivamente) en que está presente.</p>
+
+<h4><p>Otro ejemplo</p></h4>
+			<table border="1px">
+			  <tr bgcolor="yellow">
+			    <th scope="row">Día</th>
+			    <th>Hoy</th>
+			    <th>Mañana</th>
+			    <th>Domingo</th>
+			  </tr>
+			  <tr>
+			    <th>Condición</th>
+			    <td>Soleado</td>
+			    <td>Mayormente soleado</td>
+			    <td>Parcialmente nublado</td>
+			  </tr>
+			  <tr>
+			    <th>Temperatura</th>
+			    <td>19°C</td>
+			    <td>17°C</td>
+			    <td>12°C</td>
+			  </tr>
+			  <tr>
+			    <th>Vientos</th>
+			    <td>E 13 km/h</td>
+			    <td>E 11 km/h</td>
+			    <td>S 16 km/h</td>
+			  </tr>
+			</table>
+
+		<br>
+		<h2><p>El título de una tabla</p></h2>
+			<p>En HTML, los títulos de las tablas son insertados mediante el elemento <code>caption</code></p>
+			<p>La estructura sería:</p>
+			<p><code>&lt;table&gt;</code></p>
+			<p><code>&lt;caption&gt; Consumo de combustible de los autos a lo largo de las pruebas de manejo &lt;caption&gt;</code></p>
+
+			<h4><p>Ejemplo:</p></h4>
+				<table border="1px">
+				  <caption>Consumo de combustible de los autos a lo largo de las pruebas de manejo</caption>
+				  <tr>
+				    <th scope="col">Car</th>
+				    <th>Enero</th>
+				    <th>Febrero</th>
+				    <th>Marzo</th>
+				  </tr>
+				  <tr>
+				    <th>Chevrolet Camaro</th>
+				    <td>1254 lts</td>
+				    <td>1582 lts</td>
+				    <td>685 lts</td>
+				  </tr>
+				  <tr>
+				    <th>Lamborghini Aventator</th>
+				    <td>1854 lts</td>
+				    <td>1978 lts</td>
+				    <td>1502 lts</td>
+				  </tr>
+				</table>
+		<p><a href="tablas2.html">Continúa</a></p>
+		
+</body>
+</html>
